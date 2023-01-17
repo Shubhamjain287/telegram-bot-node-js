@@ -6,7 +6,7 @@ bot.start((ctx) => ctx.reply(`Hello Welcome to the Bot of Shubham Jain`));
 
 bot.on('sticker', (ctx) => ctx.reply(`💖`));
 
-bot.command(`Sakshi` , (ctx) => ctx.reply(`Chala Jaa Bsdk Woh sirf Jain ke Hai !!`));
+bot.command(`Sakshi` , (ctx) => ctx.reply(`Hello Sakshi !!`));
 
 bot.command("shubham", async (ctx) => {
     const res = await fetch(`https://api.github.com/users/shubhamjain287`);
