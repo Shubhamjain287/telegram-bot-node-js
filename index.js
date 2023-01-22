@@ -15,4 +15,6 @@ bot.command("shubham", async (ctx) => {
     return ctx.reply(data.avatar_url)
 })
 
+bot.command('hello', (ctx)=> ctx.reply(`Hello From Telegram Bot Made By Shubham Jain`));
+
 bot.launch();
