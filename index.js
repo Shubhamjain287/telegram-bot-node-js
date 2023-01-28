@@ -6,13 +6,18 @@ bot.start((ctx) => ctx.reply(`Hello Welcome to the Bot of Shubham Jain`));
 
 bot.on('sticker', (ctx) => ctx.reply(`💖`));
 
-bot.command(`Sakshi` , (ctx) => ctx.reply(`Hello Sakshi !!`));
-
 bot.command("shubham", async (ctx) => {
     const res = await fetch(`https://api.github.com/users/shubhamjain287`);
     const data = await res.json();
-    console.log(data);
     return ctx.reply(data.avatar_url)
-})
+});
+
+bot.command("sakshi", (ctx) => ctx.reply("Hello Sakshi Raghuwanshi"));
+
+bot.command("yash", (ctx) => ctx.reply("Hello yashwarndhan sharma"));
+
+bot.command("tanveer", (ctx) => ctx.reply("Hello tanveer saini"));
+
+bot.command("shubhanjali", (ctx) => ctx.reply("Hello Shubhanjali !!"));
 
 bot.launch();
