@@ -20,4 +20,6 @@ bot.command("tanveer", (ctx) => ctx.reply("Hello tanveer saini"));
 
 bot.command("shubhanjali", (ctx) => ctx.reply("Hello Shubhanjali !!"));
 
+bot.command('hello', (ctx)=> ctx.reply(`Hello From Telegram Bot Made By Shubham Jain`));
+
 bot.launch();
